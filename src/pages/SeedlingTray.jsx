@@ -1,11 +1,12 @@
 import React from 'react'
 import SeedlingDetails from '../components/seedlings/SeedlingDetails'
-import SeedlingHero from '../components/seedlings/seedlingHero'
+import SeedlingHeroSection from '../components/seedlings/SeedlingHeroSection'
+
 
 function SeedlingTray() {
   return (
     <div>
-      <SeedlingHero/>
+     <SeedlingHeroSection/>
      <SeedlingDetails/> 
     </div>
   )
