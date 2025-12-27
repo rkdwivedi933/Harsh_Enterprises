@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+/* =========================
+   BASE
+========================= */
+@layer base {
+  body {
+    @apply bg-[#F7FAF7] text-gray-800 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+@layer components {
+  /* Headings */
+  .heading-xl {
+    @apply text-3xl md:text-5xl font-bold 
+           
+           text-[#2E7D32]
+           leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl 
+           font-bold 
+           text-[#2E7D32];
+  }
+
+  .heading-md {
+    @apply text-2xl 
+           font-semibold 
+           text-gray-800;
+  }
+
+  /* Paragraph */
+  .paragraph {
+    @apply text-base md:text-lg 
+           text-gray-600 
+           leading-relaxed;
+  }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 rounded-full
+           bg-[#2E7D32] text-white font-semibold
+           transition-all duration-300 ease-out
+           shadow-md
+           hover:bg-[#1B5E20]
+           hover:shadow-xl
+           hover:-translate-y-0.5
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2
+           px-6 py-3 rounded-full
+           border-2 border-[#2E7D32]
+           text-[#2E7D32] font-semibold
+           hover:bg-[#2E7D32] hover:text-white
+           transition-all duration-300;
+  }
+}
+
+/* =========================
+   CHIPS / BADGES
+========================= */
+@layer components {
+  .chip {
+    @apply inline-flex items-center gap-2
+           px-4 py-1.5 rounded-full
+           text-sm font-medium
+           bg-[#C8E6C9] text-[#2E7D32];
+  }
+
+  .badge {
+    @apply px-3 py-1 rounded-md
+           text-xs font-semibold
+           bg-[#E8F5E9] text-[#1B5E20];
+  }
+}
+
+/* =========================
+   SECTIONS & LAYOUT
+========================= */
+@layer components {
+  .section {
+    @apply py-16 md:py-20 lg:py-24
+           px-4 md:px-8 lg:px-16;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* =========================
+   CARDS
+========================= */
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl
+           p-6 md:p-8
+           shadow-md
+           transition-all duration-300
+           hover:shadow-2xl
+           hover:-translate-y-1;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl
+           bg-white/70
+           border border-white/30
+           rounded-2xl
+           shadow-lg;
+  }
+}
