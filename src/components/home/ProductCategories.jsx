@@ -102,8 +102,8 @@ const ProductCategories = () => {
   };
 
   return (
-    <section className="section bg-linear-to-br from-green-50 via-white to-emerald-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section bg-linear-to-br from-green-50 via-white to-emerald-50  py-20">
+      <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ const ProductCategories = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
         >
           {products.map((product, index) => {
             const Icon = product.icon;

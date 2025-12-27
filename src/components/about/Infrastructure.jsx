@@ -108,14 +108,14 @@ export default function Infrastructure() {
         </motion.div>
 
         {/* Main Grid */}
-        <div className="grid  lg:grid-cols-2 gap-10 mb-14">
+        <div className="grid  lg:grid-cols-2 gap-10 mb-14 ">
           {/* Left Visual */}
           <motion.div
             variants={container}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex items-center justify-center gap-6"
+            className="flex items-center justify-center gap-6 "
           >
             {images.map((img, i) => (
               <motion.img
@@ -128,7 +128,7 @@ export default function Infrastructure() {
                 }}
                 src={img}
                 alt={`Manufacturing Facility ${i + 1}`}
-                className="h-60 sm:h-72 lg:h-80 object-contain rounded-2xl shadow-xl"
+                className="h-60 sm:h-72 lg:h-80 object-contain rounded-2xl shadow-xl "
               />
             ))}
           </motion.div>
@@ -165,7 +165,7 @@ export default function Infrastructure() {
         </div>
 
         {/* Highlight Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {highlights.map((item, i) => {
             const Icon = item.icon;
             return (

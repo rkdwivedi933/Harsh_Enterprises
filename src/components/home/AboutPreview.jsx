@@ -34,7 +34,7 @@ export default function AboutPreview() {
   }
   
   return (
-    <section className="relative py-24 bg-linear-to-br from-white via-green-50 to-emerald-100">
+    <section className="relative py-24  bg-linear-to-br from-white via-green-50 to-emerald-100">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function AboutPreview() {
         </p>
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT CONTENT */}
         <motion.div
           variants={fadeUp}

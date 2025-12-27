@@ -167,8 +167,28 @@ const FooterComponent = () => {
               <motion.div className="inline-block" whileHover={{ scale: 1.05 }}>
                 <div className="bg-linear-to-r from-green-600 to-emerald-600 px-4 py-2 rounded-lg">
                   <p className="text-amber-300 font-semibold text-sm">
-                     Growing Sustainable Agriculture
+                    Growing Sustainable Agriculture
                   </p>
+                </div>
+
+                {/* Social Links */}
+                <div className="flex items-center space-x-4 mt-2">
+                  {socialLinks.map((social, index) => {
+                    const Icon = social.icon;
+                    return (
+                      <motion.a
+                        key={index}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-2 bg-green-800/50 rounded-full ${social.color} transition-colors relative`}
+                        whileHover={{ y: -5, scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <Icon className="w-5 h-5" />
+                      </motion.a>
+                    );
+                  })}
                 </div>
               </motion.div>
             </motion.div>
@@ -240,9 +260,9 @@ const FooterComponent = () => {
                 >
                   <MapPin className="w-5 h-5 text-green-400 shrink-0 mt-1" />
                   <span className="text-gray-300">
-                    Industrial Area, Indore
+                    ward no. 10, near, Satna Rd, bamuraha,
                     <br />
-                    Madhya Pradesh, India
+                    Satna, Madhya Pradesh 485005, India
                   </span>
                 </motion.li>
 
@@ -252,10 +272,12 @@ const FooterComponent = () => {
                 >
                   <Phone className="w-5 h-5 text-green-400 shrink-0" />
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919893441392"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     +91 98765 43210
+                    <br />
+                    +91 9752434983
                   </a>
                 </motion.li>
 
@@ -274,7 +296,7 @@ const FooterComponent = () => {
 
                 <motion.li>
                   <motion.a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919893441392"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-500 px-4 py-2 rounded-lg transition-colors mt-2"
@@ -298,50 +320,46 @@ const FooterComponent = () => {
           {/* Bottom Bar */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+            className="w-full flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-300"
           >
-            {/* Copyright */}
-            <div className="text-gray-400 text-sm text-center md:text-left">
-              <p>
-                © {new Date().getFullYear()}{" "}
-                <span className="text-amber-300 font-semibold">
-                  Harsh Enterprises
-                </span>
-                . All rights reserved.
-              </p>
+            {/* Left */}
+            <div className="text-center md:text-left">
+              © {new Date().getFullYear()}{" "}
+              <span className="text-green-300 font-medium">
+                Harsh Enterprises
+              </span>
+              . All rights reserved.
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center space-x-4">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`p-2 bg-green-800/50 rounded-full ${social.color} transition-colors relative group`}
-                    whileHover={{ y: -5, scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Icon className="w-5 h-5" />
-                    <motion.div
-                      className="absolute inset-0 rounded-full bg-amber-400/20"
-                      initial={{ scale: 0, opacity: 0 }}
-                      whileHover={{ scale: 1.5, opacity: 0 }}
-                      transition={{ duration: 0.4 }}
-                    />
-                  </motion.a>
-                );
-              })}
+            {/* Center */}
+            <div className="flex items-center gap-3 text-xs md:text-sm">
+              <a
+                href="/privacy-policy"
+                className="hover:text-green-300 transition"
+              >
+                Privacy Policy
+              </a>
+              <span className="opacity-50">•</span>
+              <a href="/terms" className="hover:text-green-300 transition">
+                Terms of Service
+              </a>
+              <span className="opacity-50">•</span>
+              <a href="/rules" className="hover:text-green-300 transition">
+                Rules & Regulations
+              </a>
+            </div>
+
+            {/* Right */}
+            <div className="text-center md:text-right">
+              Designed & Developed By{" "}
+              <span className="text-green-300 font-medium">Rupesh Dwivedi</span>
             </div>
           </motion.div>
 
           {/* Made with love tag */}
           <motion.div variants={itemVariants} className="text-center mt-8">
             <p className="text-gray-500 text-xs">
-              Made with <span className="text-red-400">❤️</span> for sustainable
+              Made with <span className="text-red-400"></span> for sustainable
               agriculture
             </p>
           </motion.div>

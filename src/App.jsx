@@ -14,6 +14,10 @@ import CavityTrayProduct from "./pages/CavityTrayListing";
 import HIPSRollListing from "./pages/HIPSRollListing";
 import CocopitListing from "./pages/CocopitListing";
 import ScrollToTop from "./components/layout/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import RulesAndRegulations from "./pages/RulesAndRegulations";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -36,6 +40,10 @@ function App() {
         <Route path="/tray-listing" element={<CavityTrayProduct/>} />
          <Route path="/hips-listing" element={<HIPSRollListing/>} />
          <Route path="/cocopit-listing" element={<CocopitListing/>} />
+         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms" element={<TermsOfService/>} />
+          <Route path="/rules" element={<RulesAndRegulations/>} />
+          <Route path="/*" element={<NotFound/>} />
       </Routes>
 
       <FooterComponent />
