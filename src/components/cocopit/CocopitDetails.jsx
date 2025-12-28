@@ -127,7 +127,7 @@ className="group cursor-pointer inline-flex items-center gap-3 mb-5 rounded-full
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="sticky top-8"
+            className=""
           >
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden p-4">
               <motion.div
