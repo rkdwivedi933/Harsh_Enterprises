@@ -10,19 +10,19 @@ export default function CocopitDetails() {
   const images = [
     {
       url: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop',
-      alt: 'Cocopit blocks'
+      alt: 'Cocopeat block manufacturer in India'
     },
     {
       url: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&h=600&fit=crop',
-      alt: 'Cocopit packaging'
+      alt: 'Cocopeat block manufacturer in India'
     },
     {
       url: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&h=600&fit=crop',
-      alt: 'Cocopit in use with plants'
+      alt: 'Cocopeat block manufacturer in India'
     },
     {
       url: 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&h=600&fit=crop',
-      alt: 'Cocopit for nursery applications'
+      alt: 'Cocopeat block manufacturer in India'
     }
   ];
 

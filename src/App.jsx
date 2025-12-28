@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/layout/Navbar";
 import FooterComponent from "./components/layout/FooterComponent";
 import Home from "./pages/Home";
@@ -19,13 +18,11 @@ import TermsOfService from "./pages/TermsOfService";
 import RulesAndRegulations from "./pages/RulesAndRegulations";
 import NotFound from "./pages/NotFound";
 
-
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Navbar />
-
       <Routes>
         {/* Home Route */}
         <Route path="/" element={<Home />} />
@@ -33,17 +30,16 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/seedling-tray" element={<SeedlingTray/>} />
-   
-        <Route path="/hips-roll" element={<HipsRoll/>} />
-        <Route path="/cocopit" element={<Cocopit/>} />
-        <Route path="/tray-listing" element={<CavityTrayProduct/>} />
-         <Route path="/hips-listing" element={<HIPSRollListing/>} />
-         <Route path="/cocopit-listing" element={<CocopitListing/>} />
-         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
-          <Route path="/terms" element={<TermsOfService/>} />
-          <Route path="/rules" element={<RulesAndRegulations/>} />
-          <Route path="/*" element={<NotFound/>} />
+        <Route path="/seedling-tray" element={<SeedlingTray />} />
+        <Route path="/hips-roll" element={<HipsRoll />} />
+        <Route path="/cocopit" element={<Cocopit />} />
+        <Route path="/tray-listing" element={<CavityTrayProduct />} />
+        <Route path="/hips-listing" element={<HIPSRollListing />} />
+        <Route path="/cocopit-listing" element={<CocopitListing />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/rules" element={<RulesAndRegulations />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
 
       <FooterComponent />

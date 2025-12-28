@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Sprout, CheckCircle, Droplets, Recycle, Sun, Package, ArrowRight, Phone, ArrowBigRight, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import ProductCategories from '../home/ProductCategories';
+
 import AnimationButton from '../layout/AnimationButton';
 
 export default function SeedlingDetails() {
@@ -177,15 +177,15 @@ className="group cursor-pointer inline-flex items-center gap-3 mb-5 rounded-full
               >
                 Premium Quality Product
               </motion.div>
-              <motion.h1
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
               >
-                Seedling Tray
-              </motion.h1>
+                Seedling Tray Details
+              </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -55,7 +55,7 @@ export default function CocopitHero() {
               animate={{ opacity: 1, x: 0 }}
               className="heading-lg text-white/95 mb-3"
             >
-              Natural Growth, Better Yield
+              Cocopeat Manufacturer in India
             </motion.h1>
 
             {/* Subheading */}

@@ -57,7 +57,7 @@ export default function HipsHero() {
     animate={{ opacity: 1, x: 0 }}
     className="heading-lg text-white/95 mb-3"
   >
-    Strength You Can Rely On
+    HIPS Roll Manufacturer in India
   </motion.h1>
 
   {/* Subheading */}

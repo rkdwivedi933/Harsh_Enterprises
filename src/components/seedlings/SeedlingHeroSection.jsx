@@ -57,7 +57,8 @@ export default function SeedlingHeroSection() {
     animate={{ opacity: 1, x: 0 }}
     className="heading-lg text-white/95 mb-3"
   >
-    Strong Roots Start Here
+   Seedling Tray Manufacturer in India
+
   </motion.h1>
 
   {/* Subheading */}
