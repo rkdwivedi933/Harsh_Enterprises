@@ -182,7 +182,7 @@ const FooterComponent = () => {
           </div>
 
           {/* Bottom */}
-          <div className="flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-300">
+          <div className="flex flex-col items-center justify-center gap-4 text-sm text-gray-300 text-center">
             <div>© {new Date().getFullYear()} <span className="text-amber-300">Harsh Enterprises</span> </div>
             <div className="flex gap-4">
               <Link to="/privacy-policy">Privacy Policy</Link>
