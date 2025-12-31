@@ -37,7 +37,7 @@ export default function AboutHeroSection() {
         <div className="grid lg:grid-cols-2 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="max-w-xl">
+          <div className="max-w-xl mt-16 ">
 
             {/* Badge */}
             <motion.div

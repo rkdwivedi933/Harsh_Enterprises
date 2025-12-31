@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {  Sparkles } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
 
 export default function ProductHero() {
   const features = [
-    'Premium Quality',
-    'Eco-Friendly',
-    'Durable Design',
-    'Made in India'
+    "Premium Quality",
+    "Eco-Friendly",
+    "Durable Design",
+    "Made in India",
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function ProductHero() {
       className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-12 overflow-hidden bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1600')"
+          "url('https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1600')",
       }}
     >
       {/* Overlay */}
@@ -35,10 +35,8 @@ export default function ProductHero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 items-center">
-
           {/* LEFT CONTENT */}
-          <div className="max-w-xl">
-
+          <div className="max-w-xl mb-10">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -76,9 +74,10 @@ export default function ProductHero() {
               className="text-white leading-relaxed mb-10"
             >
               Harsh Enterprises manufactures high-quality agricultural products
-              including <strong>Seedling Trays</strong>, <strong>HIPS Rolls</strong>,
-              and eco-friendly <strong>Cocopit</strong>—built to empower farmers
-              and boost productivity.
+              including <strong>Seedling Trays</strong>,{" "}
+              <strong>HIPS Rolls</strong>, and eco-friendly{" "}
+              <strong>Cocopit</strong>—built to empower farmers and boost
+              productivity.
             </motion.p>
 
             {/* Features */}
@@ -90,7 +89,6 @@ export default function ProductHero() {
                 </div>
               ))}
             </div>
-
           </div>
 
           {/* RIGHT SIDE intentionally empty (future product image / video) */}

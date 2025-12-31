@@ -198,7 +198,7 @@ const FooterComponent = () => {
       {/* Scroll To Top */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-3 bg-green-600 text-white rounded-full"
+        className="fixed bottom-8 right-8 p-3 cursor-pointer bg-green-600 text-white rounded-full"
         animate={{ opacity: showScrollTop ? 1 : 0 }}
       >
         <ArrowUp />
